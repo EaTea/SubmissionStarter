@@ -1,16 +1,16 @@
-import {MyElement} from '../my-element.js';
 import {fixture, html} from '@open-wc/testing';
+import {SubmissionStarter} from '../submission-starter.js';
 
 const assert = chai.assert;
 
-suite('my-element', () => {
+suite('submission-starter', () => {
   test('is defined', () => {
-    const el = document.createElement('my-element');
-    assert.instanceOf(el, MyElement);
+    const el = document.createElement('submission-starter');
+    assert.instanceOf(el, SubmissionStarter);
   });
 
   test('renders with default values', async () => {
-    const el = await fixture(html`<my-element></my-element>`);
+    const el = await fixture(html`<submission-starter></submission-starter>`);
     assert.shadowDom.equal(
       el,
       `
@@ -22,7 +22,7 @@ suite('my-element', () => {
   });
 
   test('renders with a set name', async () => {
-    const el = await fixture(html`<my-element name="Test"></my-element>`);
+    const el = await fixture(html`<submission-starter name="Test"></submission-starter>`);
     assert.shadowDom.equal(
       el,
       `
@@ -34,7 +34,7 @@ suite('my-element', () => {
   });
 
   test('handles a click', async () => {
-    const el = (await fixture(html`<my-element></my-element>`)) as MyElement;
+    const el = (await fixture(html`<submission-starter></submission-starter>`)) as SubmissionStarter;
     const button = el.shadowRoot!.querySelector('button')!;
     button.click();
     await el.updateComplete;

@@ -12,16 +12,13 @@
  * http://polymer.github.io/PATENTS.txt
  */
 
-import {LitElement, html, customElement, property, css} from 'lit-element';
+import {css, customElement, html, LitElement} from 'lit-element';
+import {Section} from './section';
+import {FIRST_NATIONS_BODY, FIRST_NATIONS_HEADER, FIRST_NATIONS_LINK} from './strings';
+import {Submission} from './submission';
 
-/**
- * An example element.
- *
- * @slot - This element has a slot
- * @csspart button - The button
- */
-@customElement('my-element')
-export class MyElement extends LitElement {
+@customElement('submission-starter')
+export class SubmissionStarter extends LitElement {
   static styles = css`
     :host {
       display: block;
@@ -29,41 +26,23 @@ export class MyElement extends LitElement {
       padding: 16px;
       max-width: 800px;
     }
+
+    div {
+      white-space: pre-wrap;
+    }
   `;
-
-  /**
-   * The name to say "Hello" to.
-   */
-  @property()
-  name = 'World';
-
-  /**
-   * The number of times the button has been clicked.
-   */
-  @property({type: Number})
-  count = 0;
 
   render() {
     return html`
-      <h1>Hello, ${this.name}!</h1>
-      <button @click=${this._onClick} part="button">
-        Click Count: ${this.count}
-      </button>
-      <slot></slot>
-    `;
-  }
-
-  private _onClick() {
-    this.count++;
-  }
-
-  foo(): string {
-    return 'foo';
+    <div>${new Submission([
+      new Section(FIRST_NATIONS_HEADER, FIRST_NATIONS_LINK, FIRST_NATIONS_BODY)
+    ])}
+    </div>`;
   }
 }
 
 declare global {
   interface HTMLElementTagNameMap {
-    'my-element': MyElement;
+    'submission-starter': SubmissionStarter;
   }
 }
