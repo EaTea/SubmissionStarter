@@ -101,7 +101,7 @@ export class SubmissionStarter extends LitElement {
             <li>Visit <a href="https://www.ipcn.nsw.gov.au/have-your-say?project=4f5799b9-781a-453a-ab46-62f2ca2a83f3">the IPC's submission page</a>.</li>
             <li>Start making a submission. Fill in your details.</li>
             <li>Attach the PDF you created at the beginning to your submission.</li>
-            <li>Select "Oppose" as the reason of your submission.</li>
+            <li><b>Select "Oppose" as the reason of your submission.</b></li>
             <li>Submit your letter.</li>
           </ol>
         </div>
