@@ -69,6 +69,7 @@ export class SubmissionStarter extends LitElement {
       width: 60%;
       height: 300px;
       max-height: 1000px;
+      font-family: "Open Sans",sans-serif;
     }
 
     #next-steps {
