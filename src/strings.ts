@@ -48,7 +48,7 @@ export const FIRST_NATIONS_BODY = [
 
 export const SUBMISSION_HEADER = `
 
-I'd like to thank the commission for giving me the opportunity to state my case. I am opposed to the Narrabri gas project, and I believe the right thing to do is to reject the project. I think the case against the project has shown the harm CSG could bring, while offering little benefit.
+I'd like to thank the commission for giving me the opportunity to state my case. I am opposed to the Narrabri gas project, and I think the right thing to do is to reject the project. I think the case against the project has shown the harm CSG could bring, while offering little benefit.
 `.trim();
 
 export const SUBMISSION_BODY = [
