@@ -1,7 +1,6 @@
 import * as jsPDF from 'jspdf';
 import {css, customElement, html, LitElement} from 'lit-element';
-import {Section} from './section';
-import {FIRST_NATIONS_BODY, FIRST_NATIONS_HEADER, FIRST_NATIONS_LINK} from './strings';
+import {SUBMISSION_BODY} from './strings';
 import {Submission} from './submission';
 
 @customElement('submission-starter')
@@ -86,23 +85,21 @@ export class SubmissionStarter extends LitElement {
     <div id="main-container">
       <header>
       <h1>Stop the Narrabri Gas Project.</h1>
-      <h2>Don't let nature fade into the past.</h2>
   </header>
   <div id="left-gap"></div>
   <div id="right-gap"></div>
   <main>
-      <textarea id="your-submission">${new Submission([
-      new Section(FIRST_NATIONS_HEADER, FIRST_NATIONS_LINK, FIRST_NATIONS_BODY)
-    ])}
+      <textarea id="your-submission">${new Submission(SUBMISSION_BODY)}
       </textarea>
-      <button @click=${this.getAsPdf}>To PDF</button>
+      <button @click=${this.getAsPdf}>Save this submission as a PDF</button>
     </main>
     <footer>
         <div id="next-steps">
-        What you should do:
+        Next steps:
           <ol>
+            <li>Save your submission as a PDF.</li>
             <li>Visit <a href="https://www.ipcn.nsw.gov.au/have-your-say?project=4f5799b9-781a-453a-ab46-62f2ca2a83f3">the IPC's submission page</a>.</li>
-            <li>Fill in the form, leaving as much or as little detail as you'd like. If you can leave more that's great, but it's not necessary if you don't want to.</li>
+            <li>Start making a submission. Fill in your details.</li>
             <li>Attach the PDF you created at the beginning to your submission.</li>
             <li>Select "Oppose" as the reason of your submission.</li>
             <li>Submit your letter.</li>

@@ -45,3 +45,46 @@ export const FIRST_NATIONS_BODY = [
 
   `Only one extraction project has significantly changed extraction plans upon finding Aboriginal sacred sites. Out of [HOW MANY SITES]. Santos already knows there are a significant, unknown number of sites in Northwest New South Wales, and they plan to look for sites after their plan has been approved by the IPC [ARTICLE HERE]. Given the poor track record of extraction companies to save sacred sites, it is highly unlikely that these sites and the local Gamilaroi people's connection to the land will be respected and preserved; rather, it will be treated as collateral damage in order for Santos to continue extraction.`,
 ];
+
+export const SUBMISSION_HEADER = `
+
+I'd like to thank the commission for giving me the opportunity to state my case. I am opposed to the Narrabri gas project, and I believe the right thing to do is to reject the project. I think the case against the project has shown the harm CSG could bring, while offering little benefit.
+`.trim();
+
+export const SUBMISSION_BODY = [
+  `
+  We have seen that CSG will likely bring a higher level of fugitive submissions. It will accelerate our path towards climate change and global warming. This project flouts the precautionary principle by not considering these impacts.
+  `.trim(),
+  `
+  There is little economic benefit to NSW. The Department of Planning has said that this project will not decrease gas prices. Experts have already testified to the panel that this project is expensive and subpar compared to the market's interest in investment in renewables.`.trim(),
+  `
+  Extracting gas in northwest NSW will increase the risk of fire, expose towns to the risk of permanent groundwater pollution or depletion by penetrating the bedrock, and still not bring significant new jobs to the area. If anything, this project will increase rents and cost of living in northwest NSW.`.trim(),
+  `
+  Our Indigeneous communities are against this project. It puts their ability to practice culture in danger, without their consent, as was stated by Dolly Talbott.
+  `.trim(),
+];
+
+export const SUBMISSION_FOOTER = `
+In summary, I think there is ample evidence to show that this project should not go ahead and is harmful to the future of Narrabri and NSW. Commissioners, please reject this proposal.
+`.trim();
+
+export const SUBSTITUION_MAP = new Map<string, string[]>(
+  [['to thank', ['to express my thanks to', 'to say thank you to', 'to thank']],
+  ['opportunity', ['option', 'platform', 'opportunity']],
+  ['accelerate', ['accelerate', 'hasten', 'quicken']],
+  ['little', ['little', 'paltry', 'diminished']],
+  ['danger', ['danger', 'peril', 'jeopardy']],
+  ['economic', ['economic', 'financial', 'monetary']],
+  ['ample', ['ample', 'sufficient', 'plentiful']],
+  ['Indigenous', ['Indigenous', 'First Nations', 'Aboriginal', 'Gomeroi']],
+  ['likely', ['likely', 'probably', 'certainly']],
+  ['risk', ['likelihood', 'potential', 'hazard', 'risk']],
+  ['decrease', ['decrease', 'lower', 'cheapen']],
+  ['think', ['believe', 'think', 'opine']],
+  ['against this project', ['opposed to this project', 'against this project', 'in opposition to this project']],
+  ['practice culture', ['continue traditions', 'practice culture']],
+  ['consent', ['consent', 'agreement', 'consideration']],
+  ['summary', ['conclusion', 'summary']],
+  ['harmful', ['harmful', 'damaging', 'perilous']],
+  ['permanent', ['irreversible', 'irrevocable', 'permanent']]]
+);
