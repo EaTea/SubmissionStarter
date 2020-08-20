@@ -5,7 +5,7 @@ I'd like to thank the commission for giving me the opportunity to state my case.
 
 export const SUBMISSION_BODY = [
   `
-  We have seen that CSG will likely bring a higher level of fugitive submissions. It will accelerate our path towards climate change and global warming. This project flouts the precautionary principle by not considering these impacts. This was shown in former Chief Scientist Professor Penny Sackett's submission.
+  We have seen that CSG will likely bring a higher level of fugitive emissions. It will accelerate our path towards climate change and global warming. This project flouts the precautionary principle by not considering these impacts. This was shown in former Chief Scientist Professor Penny Sackett's submission.
   `.trim(),
   `
   There is little economic benefit to NSW. The Department of Planning has said that this project will not decrease gas prices. Experts such as Bruce Robertson and Alistair Davy have already shown to the panel that this project is expensive and subpar compared to the market's interest in investment in renewables, and thus makes no economic sense.`.trim(),
